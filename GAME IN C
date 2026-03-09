@@ -1,0 +1,78 @@
+#include <stdio.h>
+
+int main() {
+    int score = 0;
+    char answer;
+
+    printf("===== QUIZ GAME =====\n\n");
+
+    // Question 1
+    printf("1. Who is known as the father of C programming language?\n");
+    printf("A. Dennis Ritchie\nB. James Gosling\nC. Bjarne Stroustrup\nD. Guido Van Rossum\n");
+    printf("Enter your answer: ");
+    scanf(" %c", &answer);
+
+    if(answer == 'A' || answer == 'a') {
+        printf("Correct!\n\n");
+        score++;
+    } else {
+        printf("Wrong! Correct answer is A\n\n");
+    }
+
+    // Question 2
+    printf("2. Which symbol is used for comments in C?\n");
+    printf("A. //\nB. ##\nC. %%\nD. **\n");
+    printf("Enter your answer: ");
+    scanf(" %c", &answer);
+
+    if(answer == 'A' || answer == 'a') {
+        printf("Correct!\n\n");
+        score++;
+    } else {
+        printf("Wrong! Correct answer is A\n\n");
+    }
+
+    // Question 3
+    printf("3. Which function is used to print output in C?\n");
+    printf("A. scanf()\nB. printf()\nC. input()\nD. display()\n");
+    printf("Enter your answer: ");
+    scanf(" %c", &answer);
+
+    if(answer == 'B' || answer == 'b') {
+        printf("Correct!\n\n");
+        score++;
+    } else {
+        printf("Wrong! Correct answer is B\n\n");
+    }
+
+    // Question 4
+    printf("4. C language was developed in which year?\n");
+    printf("A. 1972\nB. 1980\nC. 1995\nD. 2000\n");
+    printf("Enter your answer: ");
+    scanf(" %c", &answer);
+
+    if(answer == 'A' || answer == 'a') {
+        printf("Correct!\n\n");
+        score++;
+    } else {
+        printf("Wrong! Correct answer is A\n\n");
+    }
+
+    // Question 5
+    printf("5. Which data type is used to store integer values?\n");
+    printf("A. float\nB. char\nC. int\nD. double\n");
+    printf("Enter your answer: ");
+    scanf(" %c", &answer);
+
+    if(answer == 'C' || answer == 'c') {
+        printf("Correct!\n\n");
+        score++;
+    } else {
+        printf("Wrong! Correct answer is C\n\n");
+    }
+
+    printf("===== QUIZ COMPLETED =====\n");
+    printf("Your Score: %d / 5\n", score);
+
+    return 0;
+}
